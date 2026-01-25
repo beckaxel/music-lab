@@ -1,0 +1,37 @@
+# common
+temp/
+
+# npm
+node_modules/
+
+# tsc
+*.tsbuildinfo
+
+# eslint
+.eslintcache/
+
+# vscode
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# rush
+common/deploy/
+common/temp/
+common/autoinstallers/*/.npmrc
+**/.rush/temp/
+*.lock
+
+# heft
+.cache/
+.heft/
+
+# compiled
+lib/
+lib-amd/
+lib-es6/
+lib-esnext/
+lib-commonjs/
+lib-shim/
+dist/
+dist-storybook/
