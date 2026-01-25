@@ -5,9 +5,9 @@
   "nodeSupportedVersionRange": ">=24.11.1 <25.0.0",
   "approvedPackagesPolicy": {
      "reviewCategories": [
-        "lib",
-        "app",
-        "web"
+        "library",
+        "application",
+        "webpage"
       ],
       "ignoredNpmScopes": ["@types"]
   },
@@ -31,9 +31,9 @@
   "projects": [
     {
       "packageName": "music-lab-core",
-      "projectFolder": "libs/music-lab-core",
+      "projectFolder": "libraries/music-lab-core",
       "versionPolicyName": "music-lab",
-      "reviewCategory": "lib",
+      "reviewCategory": "library",
       "tags": [ "lib", "core" ]
     }
   ]

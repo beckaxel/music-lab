@@ -1,5 +1,5 @@
 # common
-temp/
+
 
 # npm
 node_modules/
@@ -16,6 +16,7 @@ node_modules/
 !.vscode/launch.json
 
 # rush
+temp/
 common/deploy/
 common/temp/
 common/autoinstallers/*/.npmrc
