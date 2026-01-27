@@ -1,11 +1,23 @@
 {
   "name": "music-lab-core",
   "version": "1.0.0",
-  "description": "Core library of the music‑lab project.",
+  "description": "Core library of the music-lab project.",
   "main": "dist/index.js",
-  "typings": "out/esnext/index.d.js",
+  "typings": "lib/index.d.js",
+  "scripts": {
+    "build": "heft build --clean",
+    "test": "heft test --clean",
+    "_phase:build": "heft run --only build -- --clean",
+    "_phase:test": "heft run --only test -- --clean"
+  },
   "keywords": [],
   "author": "axb-dev@outlook.com",
   "license": "AGPL-3.0-only",
-  "packageManager": "pnpm@10.28.1"
+  "packageManager": "pnpm@10.28.1",
+  "devDependencies": {
+    "@rushstack/heft-web-rig": "~1.2.0",
+    "@rushstack/heft": "~1.1.7",
+    "@types/webpack-env": "~1.18.8",
+    "@types/heft-jest": "1.0.6"
+  }
 }

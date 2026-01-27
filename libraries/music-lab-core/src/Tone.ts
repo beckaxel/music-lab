@@ -1,3 +1,8 @@
+/**
+ * A Tone
+ * @public
+ */
+
 class Tone {
 
     public readonly semitone: number;
