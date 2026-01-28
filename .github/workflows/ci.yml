@@ -16,9 +16,9 @@ jobs:
         with:
           name: axb
           email: axb-dev@outlook.com
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
-          node-version: 16
+          node-version: 24
       - name: Verify Change Logs
         run: node common/scripts/install-run-rush.js change --verify
       - name: Rush Install
