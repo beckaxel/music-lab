@@ -78,7 +78,6 @@ export class Tuning {
     private convertCentsToSemitoneSpan(value: number): [SemitoneSpan, number] {
         const octaves = value < 0 ? Math.ceil(value / 1200) : Math.floor(value / 1200);
         const semitoneCents = value % 1200;
-
         
         let semitones = 0;
         let deviation = 1200;

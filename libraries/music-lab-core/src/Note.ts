@@ -1,5 +1,20 @@
 import { SemitoneSpan } from "./SemitoneSpan";
 
+const semitoneNames = [
+    'C',
+    'C#',
+    'D',
+    'D#',
+    'E',
+    'F',
+    'F#',
+    'G',
+    'G#',
+    'A',
+    'A#',
+    'B'
+]
+
 /**
  * A Note
  * @public
@@ -29,5 +44,9 @@ export class Note {
         return value instanceof Note
             ? new SemitoneSpan(this.midiNote - value.midiNote)
             : new Note(this.midiNote - value.totalSemitones);
+    }
+
+    public toString() {
+        return `${semitoneNames[this.semitone]}${this.octave}`
     }
 }

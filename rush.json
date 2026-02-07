@@ -27,7 +27,7 @@
   },
   "variants": [],
   "telemetryEnabled": false,
-  "allowedProjectTags": [ "lib", "app", "web", "core" ],
+  "allowedProjectTags": [ "lib", "app", "web", "core", "component" ],
   "projects": [
     {
       "packageName": "music-lab-core",
@@ -35,6 +35,18 @@
       "versionPolicyName": "music-lab",
       "reviewCategory": "library",
       "tags": [ "lib", "core" ]
+    }, {
+      "packageName": "music-lab-components",
+      "projectFolder": "libraries/music-lab-components",
+      "versionPolicyName": "music-lab",
+      "reviewCategory": "library",
+      "tags": [ "lib", "core", "component" ]
+    }, {
+      "packageName": "music-lab-tuner",
+      "projectFolder": "web/music-lab-tuner",
+      "versionPolicyName": "music-lab",
+      "reviewCategory": "library",
+      "tags": [ "lib", "web" ]
     }
   ]
 }

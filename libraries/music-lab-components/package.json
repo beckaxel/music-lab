@@ -1,7 +1,7 @@
 {
-  "name": "music-lab-core",
+  "name": "music-lab-components",
   "version": "1.0.0",
-  "description": "Core library of the music-lab project.",
+  "description": "Component library of the music-lab project.",
   "main": "dist/index.js",
   "typings": "lib/index.d.js",
   "scripts": {
@@ -24,3 +24,4 @@
     "tslib": "~2.8.1"
   }
 }
+

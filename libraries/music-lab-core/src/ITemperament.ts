@@ -2,7 +2,6 @@
  * A Temperament
  * @public
  */
-
 export interface ITemperament {
     
     name: string

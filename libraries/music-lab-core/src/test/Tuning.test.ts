@@ -273,4 +273,20 @@ describe('Tuning - Equal - 440 Hz test', () => {
     'Midi-Note $midiNote should have frequency $frequency',
     d => expect(tuning.getPitch(d.frequency).note.midiNote).toBe(d.midiNote)
   );
+
+  test.each<{ frequency: number, deviation: number }>([
+    { frequency: 293.0, deviation: -4 },
+    { frequency: 467.4, deviation: 5 },
+    { frequency: 352.7, deviation: 17 },
+    { frequency: 233.4, deviation: 2 },
+    { frequency: 554.6, deviation: 1 },
+    { frequency: 147.3, deviation: 6 },
+    { frequency: 139.1, deviation: 6 },
+    { frequency: 889.9, deviation: 19 },
+    { frequency: 734.0, deviation: -14 }
+  ])(
+    'Frequency $frequency should have a deviation of $deviation',
+    d => expect(tuning.getPitch(d.frequency).deviation).toBeCloseTo(d.deviation, 0)
+  );
+
 });

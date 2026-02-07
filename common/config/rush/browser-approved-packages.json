@@ -9,6 +9,10 @@
     {
       "name": "@rushstack/heft-web-rig",
       "allowedCategories": [ "library" ]
+    },
+    {
+      "name": "tslib",
+      "allowedCategories": [ "library" ]
     }
   ]
 }

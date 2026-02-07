@@ -4,6 +4,7 @@ import { Note } from './Note';
 import { SemitoneSpan } from './SemitoneSpan';
 import { Tuning } from './Tuning';
 import * as temperaments from './Temperaments';
+import { TickCallback, Ticker } from './Ticker';
 
 export { 
     SemitoneSpan,
@@ -11,5 +12,7 @@ export {
     Note,
     IPitch,    
     Tuning,
-    temperaments
+    temperaments,
+    TickCallback,
+    Ticker
 };
